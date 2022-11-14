@@ -1,0 +1,7 @@
+django
+Markdown
+django-filter
+djangorestframework
+psycopg2-binary
+django-ckeditor
+Pillow

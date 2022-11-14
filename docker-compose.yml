@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  api:
+    build: .
+    command: python3 manage.py runserver 0.0.0.0:80
+    env_file:
+      - ./.envs/.postgres
+      - ./.envs/.django
+    volumes:
+      - .:/code
+    ports:
+      - "80:80"
+
+volumes:
+    pgdata:
